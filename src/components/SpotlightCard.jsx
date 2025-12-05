@@ -24,7 +24,7 @@ const SpotlightCard = ({ children, className = "" }) => {
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`relative overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/50 px-8 py-10 shadow-2xl ${className}`}
+      className={`relative overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/50 shadow-2xl ${className}`}
     >
       {/* Efeito de Holofote */}
       <div
@@ -35,7 +35,7 @@ const SpotlightCard = ({ children, className = "" }) => {
         }}
       />
 
-      <div className="relative z-10">{children}</div>
+      <div className="w-full h-full z-10">{children}</div>
     </div>
   );
 };
