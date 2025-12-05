@@ -35,7 +35,7 @@ const SpotlightCard = ({ children, className = "" }) => {
         }}
       />
 
-      <div className="z-10">{children}</div>
+      <div className="w-full h-full z-10">{children}</div>
     </div>
   );
 };
