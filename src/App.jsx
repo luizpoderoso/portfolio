@@ -187,13 +187,18 @@ function App() {
 
           {/* Card 6: Footer Integrado */}
           <SpotlightCard className="md:col-span-2 flex items-center justify-between px-8 py-10">
-            <div className="text-xs text-zinc-500">
-              © 2025 Luiz Poderoso. <br />
-              Feito com React & Tailwind.
+            <div className="h-full flex flex-col justify-between">
+              <div className="text-xs text-zinc-500">
+                © 2025 Luiz Poderoso. <br />
+                Feito com React & Tailwind.
+              </div>
+              <a
+                href="mailto:lpoderoso@icloud.com"
+                className="w-fit text-sm font-semibold text-white bg-white/10 px-4 py-2 rounded-lg hover:bg-white/20 transition"
+              >
+                Enviar Email
+              </a>
             </div>
-            <button className="mt-4 text-sm font-semibold text-white bg-white/10 px-4 py-2 rounded-lg hover:bg-white/20 transition">
-              Copiar Email
-            </button>
           </SpotlightCard>
         </div>
       </main>
