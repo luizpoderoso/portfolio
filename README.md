@@ -2,6 +2,8 @@
 
 Este repositório contém o código-fonte do meu portfólio pessoal. O projeto foi desenvolvido com foco em performance, organização de código e boas práticas de Engenharia de Software.
 
+🔗 **Demo Online:** [Acesse o Portfólio Aqui](https://luizpoderoso.github.io/portfolio/)
+
 ## 🚀 Tecnologias e Ferramentas
 
 O projeto foi construído utilizando uma stack moderna e leve:
