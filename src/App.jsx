@@ -132,7 +132,7 @@ function App() {
 
           {/* Card 4: Localização + Status */}
           <SpotlightCard className="flex items-center min-h-[180px]">
-            <div className="w-full h-full flex flex-col justify-center px-6 md:px-10">
+            <div className="w-full h-full flex flex-col justify-center px-6 lg:px-10">
               <div className="flex flex-col justify-start gap-2">
                 <div className="flex text-zinc-400 gap-2">
                   <MapPin size={18} />
@@ -155,22 +155,22 @@ function App() {
           <SpotlightCard className="md:col-span-2 bg-zinc-900">
             <div className="w-full h-full flex flex-row">
               {/* Info do Projeto */}
-              <div className="flex flex-col justify-center p-3 md:p-6 w-1/2 z-10">
-                <div className="flex flex-col md:flex-row md:gap-x-8 items-start mb-2">
-                  <h3 className="sm:text-lg md:text-xl font-bold text-white">
+              <div className="flex flex-col justify-center p-3 lg:p-6 w-1/2 z-10">
+                <div className="flex flex-col lg:flex-row lg:gap-x-8 items-start mb-2">
+                  <h3 className="sm:text-lg lg:text-xl font-bold text-white">
                     Financify
                   </h3>
                   <div className="px-1 md:px-2 py-1 w-fit rounded-md bg-white/10 text-xs border border-white/10">
                     Next.js 15
                   </div>
                 </div>
-                <p className="text-xs md:text-sm text-zinc-400 mb-2 sm:mb-4">
+                <p className="text-xs lg:text-sm text-zinc-400 mb-2 sm:mb-3">
                   Gestão financeira pessoal com dashboards inteligentes.
                 </p>
                 <a
                   href="https://github.com/luizpoderoso/financify"
                   target="_blank"
-                  className="w-fit md:mt-4 text-xs text-white bg-white/10 p-1 sm:px-4 sm:py-2 rounded-lg hover:bg-white/20 transition"
+                  className="w-fit lg:mt-4 text-xs text-white bg-white/10 p-1 sm:px-4 sm:py-2 rounded-lg hover:bg-white/20 transition"
                 >
                   Acessar repositório
                 </a>
