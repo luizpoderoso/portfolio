@@ -1,16 +1,29 @@
-# React + Vite
+# Luiz Poderoso - Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém o código-fonte do meu portfólio pessoal. O projeto foi desenvolvido com foco em performance, organização de código e boas práticas de Engenharia de Software.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias e Ferramentas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O projeto foi construído utilizando uma stack moderna e leve:
 
-## React Compiler
+- **React + Vite**: Para uma build rápida e otimizada.
+- **Tailwind CSS**: Para estilização responsiva e utility-first.
+- **Lucide React**: Biblioteca de ícones leve e consistente.
+- **ESLint & Prettier**: Para padronização de código.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🏗 Metodologia de Desenvolvimento
 
-## Expanding the ESLint configuration
+Para garantir a qualidade e a rastreabilidade do código, este projeto seguiu padrões rigorosos de desenvolvimento:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Git Flow**: Ciclo de vida de branches organizado (`main`, `develop`, `feat/*`, `fix/*`).
+- **Commits Semânticos**: Histórico de alterações padronizado e legível.
+- **Componentização**: Arquitetura modular para facilitar manutenção e escalabilidade.
+
+## 📦 Estrutura do Projeto
+
+```bash
+src/
+├── components/   # Componentes reutilizáveis (Cards, Header, etc.)
+├── assets/       # Imagens e recursos estáticos
+├── App.jsx       # Componente principal e layout
+└── main.jsx      # Ponto de entrada da aplicação
