@@ -4,7 +4,7 @@ import { Github, Linkedin, Code2, Instagram } from "lucide-react";
 
 function App() {
   return (
-    <div className="relative min-h-screen w-full p-4 md:p-8 overflow-hidden">
+    <div className="relative min-h-screen w-full p-2 md:p-8 overflow-hidden">
       {/* Fundo com textura */}
       <div className="bg-noise"></div>
 
@@ -22,7 +22,7 @@ function App() {
         {/* BENTO GRID */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[180px]">
           {/* Card 1: Stack Principal */}
-          <SpotlightCard className="md:col-span-2 md:row-span-2 flex flex-col justify-between group px-8 py-10">
+          <SpotlightCard className="md:col-span-2 md:row-span-2 flex flex-col justify-between group px-4 md:px-8 py-5 md:py-10">
             <div
               className="absolute top-0 left-0 inset-0 z-0 opacity-20"
               style={{
@@ -38,7 +38,7 @@ function App() {
                   Full Stack
                 </span>
               </div>
-              <h3 className="text-3xl font-bold text-white leading-tight">
+              <h3 className="text-lg sm:text-xl md:text-3xl font-bold text-white leading-tight">
                 Construindo aplicações modernas com performance.
               </h3>
             </div>
@@ -56,8 +56,8 @@ function App() {
           </SpotlightCard>
 
           {/* Card 2: Redes Sociais */}
-          <SpotlightCard className="md:row-span-2 px-8 py-10">
-            <div className="flex flex-col gap-4 h-full">
+          <SpotlightCard className="md:row-span-2 px-4 py-5 md:px-8 md:py-10">
+            <div className="flex md:flex-col gap-4 h-full [&>a]:w-full">
               <a
                 href="https://github.com/luizpoderoso"
                 target="_blank"
@@ -109,7 +109,7 @@ function App() {
               className="min-h-[180px] absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
               style={{
                 backgroundImage:
-                  'url("https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1720558643")',
+                  'url("https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/0c67438c8b3a418b5ca28f9f234506745493ae42-854x484.png?accountingTag=VAL?auto=format&fit=crop&q=80&h=484&w=854&crop=center")',
               }}
             ></div>
 
@@ -119,20 +119,22 @@ function App() {
             {/* Conteúdo sobreposto */}
             <div className="relative z-10 h-full flex flex-col justify-end p-4">
               <div className="flex items-center gap-2 mb-1">
-                <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                <span className="text-[10px] font-bold uppercase text-green-400 tracking-wider">
-                  Jogando Agora
+                {/* Abaixo está comentado a animação de pulso (JOGANDO AGORA) */}
+                {/* <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>*/}
+                <div className="w-2 h-2 rounded-full bg-red-500"></div>
+                <span className="text-[10px] font-bold uppercase text-red-400 tracking-wider">
+                  Último jogo
                 </span>
               </div>
               <span className="font-bold text-white text-lg leading-tight">
-                Red Dead Redemption 2
+                Valorant
               </span>
             </div>
           </SpotlightCard>
 
           {/* Card 4: Localização + Status */}
           <SpotlightCard className="flex items-center min-h-[180px]">
-            <div className="w-full h-full flex flex-col justify-center px-10">
+            <div className="w-full h-full flex flex-col justify-center px-6 lg:px-10">
               <div className="flex flex-col justify-start gap-2">
                 <div className="flex text-zinc-400 gap-2">
                   <MapPin size={18} />
@@ -155,20 +157,22 @@ function App() {
           <SpotlightCard className="md:col-span-2 bg-zinc-900">
             <div className="w-full h-full flex flex-row">
               {/* Info do Projeto */}
-              <div className="flex flex-col justify-center p-6 w-1/2 z-10">
-                <div className="flex gap-x-8 items-start mb-2">
-                  <h3 className="text-xl font-bold text-white">Financify</h3>
-                  <div className="px-2 py-1 w-fit rounded-md bg-white/10 text-xs border border-white/10">
+              <div className="flex flex-col justify-center p-3 lg:p-6 w-1/2 z-10">
+                <div className="flex flex-col lg:flex-row lg:gap-x-8 items-start mb-2">
+                  <h3 className="sm:text-lg lg:text-xl font-bold text-white">
+                    Financify
+                  </h3>
+                  <div className="px-1 md:px-2 py-1 w-fit rounded-md bg-white/10 text-xs border border-white/10">
                     Next.js 15
                   </div>
                 </div>
-                <p className="text-sm text-zinc-400 mb-4">
+                <p className="text-xs lg:text-sm text-zinc-400 mb-2 sm:mb-3">
                   Gestão financeira pessoal com dashboards inteligentes.
                 </p>
                 <a
                   href="https://github.com/luizpoderoso/financify"
                   target="_blank"
-                  className="w-fit mt-4 text-xs text-white bg-white/10 px-4 py-2 rounded-lg hover:bg-white/20 transition"
+                  className="w-fit lg:mt-4 text-xs text-white bg-white/10 p-1 sm:px-4 sm:py-2 rounded-lg hover:bg-white/20 transition"
                 >
                   Acessar repositório
                 </a>

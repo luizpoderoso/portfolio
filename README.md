@@ -26,6 +26,5 @@ Para garantir a qualidade e a rastreabilidade do código, este projeto seguiu pa
 ```bash
 src/
 ├── components/   # Componentes reutilizáveis (Cards, Header, etc.)
-├── assets/       # Imagens e recursos estáticos
 ├── App.jsx       # Componente principal e layout
 └── main.jsx      # Ponto de entrada da aplicação
