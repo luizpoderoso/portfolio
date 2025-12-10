@@ -107,9 +107,12 @@ function App() {
             {/* Imagem de Fundo */}
             <div
               className="min-h-[180px] absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+              // style={{
+              //   backgroundImage:
+              //     'url("https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/0c67438c8b3a418b5ca28f9f234506745493ae42-854x484.png?accountingTag=VAL?auto=format&fit=crop&q=80&h=484&w=854&crop=center")',
+              // }}
               style={{
-                backgroundImage:
-                  'url("https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/0c67438c8b3a418b5ca28f9f234506745493ae42-854x484.png?accountingTag=VAL?auto=format&fit=crop&q=80&h=484&w=854&crop=center")',
+                backgroundImage: 'url("valorant.webp")',
               }}
             ></div>
 
@@ -180,7 +183,7 @@ function App() {
               {/* Imagem Preview */}
               <div className="w-1/2 h-full relative">
                 <img
-                  src="financify-preview.jpeg"
+                  src="financify-preview.webp"
                   alt="Financify Dashboard"
                   className="absolute inset-0 w-full h-full object-cover object-top-left opacity-80 hover:opacity-100 transition-opacity border-l border-white/5"
                 />
