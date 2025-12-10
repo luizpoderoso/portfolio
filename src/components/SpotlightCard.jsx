@@ -1,41 +1,37 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 const SpotlightCard = ({ children, className = "" }) => {
   const divRef = useRef(null);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [opacity, setOpacity] = useState(0);
 
-  // Atualizar a posição atual do mouse
   const handleMouseMove = (e) => {
     if (!divRef.current) return;
 
     const div = divRef.current;
     const rect = div.getBoundingClientRect();
 
-    setPosition({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-  };
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
 
-  const handleMouseEnter = () => setOpacity(1);
-  const handleMouseLeave = () => setOpacity(0);
+    // Injeção de coordenadas direto no css da div
+    div.style.setProperty("--mouse-x", `${x}px`);
+    div.style.setProperty("--mouse-y", `${y}px`);
+  };
 
   return (
     <div
       ref={divRef}
       onMouseMove={handleMouseMove}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      className={`relative overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/50 shadow-2xl ${className}`}
+      className={`group/spotlight relative overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/50 shadow-2xl ${className}`}
     >
       {/* Efeito de Holofote */}
       <div
-        className="pointer-events-none absolute -inset-px transition duration-300"
+        className="pointer-events-none absolute -inset-px transition duration-300 opacity-0 group-hover/spotlight:opacity-100"
         style={{
-          opacity,
-          background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(255,255,255,0.06), transparent 40%)`,
+          background: `radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255,0.06), transparent 40%)`,
         }}
       />
 
-      <div className="w-full h-full z-10">{children}</div>
+      <div className="z-10 w-full h-full">{children}</div>
     </div>
   );
 };
