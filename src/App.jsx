@@ -1,6 +1,9 @@
-import { MapPin } from "lucide-react";
 import SpotlightCard from "./components/SpotlightCard";
-import { Github, Linkedin, Code2, Instagram } from "lucide-react";
+import { DiReact, DiRust } from "react-icons/di";
+import { FaCode, FaInstagram } from "react-icons/fa6";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { LuMapPin } from "react-icons/lu";
+import { SiTypescript } from "react-icons/si";
 
 function App() {
   return (
@@ -33,7 +36,7 @@ function App() {
             ></div>
             <div>
               <div className="flex items-center gap-2 text-red-400 mb-2">
-                <Code2 size={20} />
+                <FaCode size={20} />
                 <span className="font-mono text-xs uppercase tracking-wider">
                   Full Stack
                 </span>
@@ -44,13 +47,13 @@ function App() {
             </div>
             <div className="flex gap-3 mt-4">
               <div className="w-10 h-10 rounded bg-white/5 flex items-center justify-center border border-white/5">
-                <i class="devicon-react-original colored scale-150"></i>
+                <DiReact size={28} className="text-cyan-400" />
               </div>
               <div className="w-10 h-10 rounded bg-white/5 flex items-center justify-center border border-white/5">
-                <i class="devicon-rust-original scale-150"></i>
+                <DiRust size={36} className="text-orange-500" />
               </div>
               <div className="w-10 h-10 rounded bg-white/5 flex items-center justify-center border border-white/5">
-                <i class="devicon-typescript-plain colored scale-150"></i>
+                <SiTypescript size={24} className="text-blue-400" />
               </div>
             </div>
           </SpotlightCard>
@@ -63,7 +66,7 @@ function App() {
                 target="_blank"
                 className="flex flex-col items-center justify-center gap-2 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 hover:border-white/20 transition group py-1"
               >
-                <Github
+                <FiGithub
                   size={32}
                   className="text-zinc-400 group-hover:text-white transition"
                 />
@@ -77,7 +80,7 @@ function App() {
                 target="_blank"
                 className="flex flex-col items-center justify-center gap-2 bg-white/5 rounded-xl border border-white/5 hover:bg-blue-500/10 hover:border-blue-500/30 transition group py-1"
               >
-                <Linkedin
+                <FiLinkedin
                   size={32}
                   className="text-zinc-400 group-hover:text-blue-400 transition"
                 />
@@ -91,7 +94,7 @@ function App() {
                 target="_blank"
                 className="flex flex-col items-center justify-center gap-2 bg-white/5 rounded-xl border border-white/5 hover:bg-purple-500/10 hover:border-purple-500/30 transition group py-1"
               >
-                <Instagram
+                <FaInstagram
                   size={32}
                   className="text-zinc-400 group-hover:text-purple-400 transition"
                 />
@@ -107,10 +110,6 @@ function App() {
             {/* Imagem de Fundo */}
             <div
               className="min-h-[180px] absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-              // style={{
-              //   backgroundImage:
-              //     'url("https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/0c67438c8b3a418b5ca28f9f234506745493ae42-854x484.png?accountingTag=VAL?auto=format&fit=crop&q=80&h=484&w=854&crop=center")',
-              // }}
               style={{
                 backgroundImage: 'url("valorant.webp")',
               }}
@@ -139,8 +138,8 @@ function App() {
           <SpotlightCard className="flex items-center min-h-[180px]">
             <div className="w-full h-full flex flex-col justify-center px-6 lg:px-10">
               <div className="flex flex-col justify-start gap-2">
-                <div className="flex text-zinc-400 gap-2">
-                  <MapPin size={18} />
+                <div className="flex text-zinc-400 gap-1">
+                  <LuMapPin size={18} />
                   <span className="text-xs font-mono uppercase">
                     Localização
                   </span>
@@ -148,7 +147,7 @@ function App() {
                 <span className="w-fit text-xl font-bold text-white">
                   Aracaju, BR
                 </span>
-                <div className="text-xs text-zinc-500 mt-1 flex items-center gap-1">
+                <div className="text-xs text-zinc-500 flex items-center gap-1">
                   <span className="w-2 h-2 rounded-full bg-green-500"></span>
                   Disponível para projetos
                 </div>
