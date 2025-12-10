@@ -1,3 +1,5 @@
+import valorantBg from "./assets/valorant.webp";
+import financifyPreview from "./assets/financify-preview.webp";
 import SpotlightCard from "./components/SpotlightCard";
 import { DiReact, DiRust } from "react-icons/di";
 import { FaCode, FaInstagram } from "react-icons/fa6";
@@ -111,7 +113,7 @@ function App() {
             <div
               className="min-h-[180px] absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
               style={{
-                backgroundImage: 'url("valorant.webp")',
+                backgroundImage: `url(${valorantBg})`,
               }}
             ></div>
 
@@ -182,7 +184,7 @@ function App() {
               {/* Imagem Preview */}
               <div className="w-1/2 h-full relative">
                 <img
-                  src="financify-preview.webp"
+                  src={financifyPreview}
                   alt="Financify Dashboard"
                   className="absolute inset-0 w-full h-full object-cover object-top-left opacity-80 hover:opacity-100 transition-opacity border-l border-white/5"
                 />
