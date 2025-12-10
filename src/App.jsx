@@ -109,7 +109,7 @@ function App() {
               className="min-h-[180px] absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
               style={{
                 backgroundImage:
-                  'url("https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1720558643")',
+                  'url("https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/0c67438c8b3a418b5ca28f9f234506745493ae42-854x484.png?accountingTag=VAL?auto=format&fit=crop&q=80&h=484&w=854&crop=center")',
               }}
             ></div>
 
@@ -119,13 +119,15 @@ function App() {
             {/* Conteúdo sobreposto */}
             <div className="relative z-10 h-full flex flex-col justify-end p-4">
               <div className="flex items-center gap-2 mb-1">
-                <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                <span className="text-[10px] font-bold uppercase text-green-400 tracking-wider">
-                  Jogando Agora
+                {/* Abaixo está comentado a animação de pulso (JOGANDO AGORA) */}
+                {/* <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>*/}
+                <div className="w-2 h-2 rounded-full bg-red-500"></div>
+                <span className="text-[10px] font-bold uppercase text-red-400 tracking-wider">
+                  Último jogo
                 </span>
               </div>
               <span className="font-bold text-white text-lg leading-tight">
-                Red Dead Redemption 2
+                Valorant
               </span>
             </div>
           </SpotlightCard>
