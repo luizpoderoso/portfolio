@@ -1,11 +1,11 @@
 import disritmiaBg from "./assets/disritmia.webp";
-import financifyPreview from "./assets/financify-preview.webp";
+import projectPreview from "./assets/huntly-preview.webp";
 import SpotlightCard from "./components/SpotlightCard";
 import { DiReact, DiRust } from "react-icons/di";
 import { FaCode, FaInstagram } from "react-icons/fa6";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { LuMapPin } from "react-icons/lu";
-import { SiTypescript } from "react-icons/si";
+import { SiDotnet, SiTypescript } from "react-icons/si";
 
 function App() {
   return (
@@ -56,6 +56,9 @@ function App() {
               </div>
               <div className="w-10 h-10 rounded bg-white/5 flex items-center justify-center border border-white/5">
                 <SiTypescript size={24} className="text-blue-400" />
+              </div>
+              <div className="w-10 h-10 rounded bg-white/5 flex items-center justify-center border border-white/5">
+                <SiDotnet size={24} className="text-white" />
               </div>
             </div>
           </SpotlightCard>
@@ -163,17 +166,17 @@ function App() {
               <div className="flex flex-col justify-center p-3 lg:p-6 w-1/2 z-10">
                 <div className="flex flex-col lg:flex-row lg:gap-x-8 items-start mb-2">
                   <h3 className="sm:text-lg lg:text-xl font-bold text-white">
-                    Financify
+                    Huntly
                   </h3>
                   <div className="px-1 md:px-2 py-1 w-fit rounded-md bg-white/10 text-xs border border-white/10">
-                    Next.js 15
+                    Svelte + .NET
                   </div>
                 </div>
                 <p className="text-xs lg:text-sm text-zinc-400 mb-2 sm:mb-3">
-                  Gestão financeira pessoal com dashboards inteligentes.
+                  CRUD de vagas de trabalho com autenticação.
                 </p>
                 <a
-                  href="https://github.com/luizpoderoso/financify"
+                  href="https://github.com/luizpoderoso/huntly"
                   target="_blank"
                   className="w-fit lg:mt-4 text-xs text-white bg-white/10 p-1 sm:px-4 sm:py-2 rounded-lg hover:bg-white/20 transition"
                 >
@@ -181,11 +184,11 @@ function App() {
                 </a>
               </div>
               {/* Imagem Preview */}
-              <div className="w-1/2 h-full relative">
+              <div className="w-1/2 h-full relative overflow-hidden">
                 <img
-                  src={financifyPreview}
-                  alt="Financify Dashboard"
-                  className="absolute inset-0 w-full h-full object-cover object-top-left opacity-80 hover:opacity-100 transition-opacity border-l border-white/5"
+                  src={projectPreview}
+                  alt="Huntly Dashboard"
+                  className="absolute inset-0 w-full h-full object-center opacity-80 transition hover:scale-105 duration-700 z-20 border-l border-white/5"
                 />
                 <div className="absolute inset-0 bg-linear-to-r from-zinc-900/50 to-transparent"></div>
               </div>
@@ -196,7 +199,7 @@ function App() {
           <SpotlightCard className="md:col-span-2 flex items-center justify-between px-8 py-10">
             <div className="h-full flex flex-col justify-between">
               <div className="text-xs text-zinc-500">
-                © 2025 Luiz Poderoso. <br />
+                © 2026 Luiz Poderoso. <br />
                 Feito com React & Tailwind.
               </div>
               <a
