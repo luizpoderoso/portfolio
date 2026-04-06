@@ -1,4 +1,4 @@
-import valorantBg from "./assets/valorant.webp";
+import disritmiaBg from "./assets/disritmia.webp";
 import financifyPreview from "./assets/financify-preview.webp";
 import SpotlightCard from "./components/SpotlightCard";
 import { DiReact, DiRust } from "react-icons/di";
@@ -113,7 +113,7 @@ function App() {
             <div
               className="min-h-[180px] absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
               style={{
-                backgroundImage: `url(${valorantBg})`,
+                backgroundImage: `url(${disritmiaBg})`,
               }}
             ></div>
 
@@ -124,14 +124,13 @@ function App() {
             <div className="relative z-10 h-full flex flex-col justify-end p-4">
               <div className="flex items-center gap-2 mb-1">
                 {/* Abaixo está comentado a animação de pulso (JOGANDO AGORA) */}
-                {/* <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>*/}
-                <div className="w-2 h-2 rounded-full bg-red-500"></div>
-                <span className="text-[10px] font-bold uppercase text-red-400 tracking-wider">
-                  Último jogo
+                <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                <span className="text-[10px] font-bold uppercase text-green-400 tracking-wider">
+                  Música Favorita
                 </span>
               </div>
               <span className="font-bold text-white text-lg leading-tight">
-                Valorant
+                Disritmia
               </span>
             </div>
           </SpotlightCard>
