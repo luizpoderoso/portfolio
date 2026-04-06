@@ -19,10 +19,10 @@ function App() {
           <h1 className="text-5xl md:text-6xl font-bold text-white tracking-tighter mb-4">
             Luiz Poderoso<span className="text-red-500">.</span>
           </h1>
-          <p className="text-xl text-zinc-400 max-w-2xl">
-            Full Stack Developer. Transformando café em código limpo e escalável
-            com Rust e React.
-          </p>
+          <h2 className="text-xl text-zinc-400 max-w-2xl">
+            Full Stack Developer. 
+            Transformando café em código limpo e escalável.
+          </h2>
         </header>
         {/* BENTO GRID */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[180px]">
