@@ -5,7 +5,7 @@ import { DiReact, DiRust } from "react-icons/di";
 import { FaCode, FaInstagram } from "react-icons/fa6";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { LuMapPin } from "react-icons/lu";
-import { SiTypescript } from "react-icons/si";
+import { SiDotnet, SiTypescript } from "react-icons/si";
 
 function App() {
   return (
@@ -56,6 +56,9 @@ function App() {
               </div>
               <div className="w-10 h-10 rounded bg-white/5 flex items-center justify-center border border-white/5">
                 <SiTypescript size={24} className="text-blue-400" />
+              </div>
+              <div className="w-10 h-10 rounded bg-white/5 flex items-center justify-center border border-white/5">
+                <SiDotnet size={24} className="text-white" />
               </div>
             </div>
           </SpotlightCard>
@@ -196,7 +199,7 @@ function App() {
           <SpotlightCard className="md:col-span-2 flex items-center justify-between px-8 py-10">
             <div className="h-full flex flex-col justify-between">
               <div className="text-xs text-zinc-500">
-                © 2025 Luiz Poderoso. <br />
+                © 2026 Luiz Poderoso. <br />
                 Feito com React & Tailwind.
               </div>
               <a
